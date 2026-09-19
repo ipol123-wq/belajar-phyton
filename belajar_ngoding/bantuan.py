@@ -1,2 +1,2 @@
-print('aku sedang belajar git')
-print('udah lumayan bisa aku cik')
+import os
+os.remove('riwayat,json')
