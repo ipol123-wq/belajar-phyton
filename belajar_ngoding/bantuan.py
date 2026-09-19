@@ -1,0 +1,1 @@
+print('aku sedang belajar git')
