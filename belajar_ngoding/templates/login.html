@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <h1>login ATM</h1>
+    <form method="POST">
+        <label>PIN:</label>
+        <input type="password" name="pin" placeholder="masukkan PIN">
+        <button type="submit">masuk</button>
+    </form>
+    {% if pesan %}
+        <p>{{pesan}}</p>
+    {% endif %}
+
+</body>
+</html>
