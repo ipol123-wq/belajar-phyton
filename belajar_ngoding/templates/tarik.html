@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tarik tunai</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>tarik tunai</h1>
+    <form method="POST">
+        <label>nominal:</label>
+        <input type="number" name="jumlah" placeholder="masukkan jumlah">
+        <button type="submit">tarik</button>
+    </form>
+    <br>
+    <a href="/menu">kembali ke menu</a>
+{% if pesan %}
+    <p>{{ pesan }}</p>
+{% endif %}
+</body>
+</html>
